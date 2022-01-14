@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>05</title>
+</head>
+<style>
+    p {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 25pt;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #box {
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    button {
+        height: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: aliceblue;
+        background-color: black;
+    }
+</style>
+<body>
+    <div id="box">
+        <button onclick="addFont()">Font [+]</button>
+        <button onclick="decFont()">Font [-]</button>
+        <button onclick="addColor()">Color [+]</button>
+        <button onclick="decColor()">Color [-]</button>
+    </div>
+    <p id="text">Web Technology</p>
+    <script>
+        var size = 25, vul = -1;
+        var color = ["red", "green", "yellow", "blue", "aqua", "blueviolet"];
+        function addFont() {
+            size += 4;
+            document.getElementById('text').style.fontSize = size + 'pt';
+        }
+        function decFont() {
+            size -= 4;
+            document.getElementById('text').style.fontSize = size + 'pt';
+        }
+        function addColor() {
+        	vul++;
+        	if (vul == 6)
+        		vul = 0;
+            document.getElementById('text').style.color = color[vul];
+        }
+        function decColor() {
+            vul--;
+            if (vul == -1)
+        		vul = 5;
+            document.getElementById('text').style.color = color[vul];
+        }
+    </script>
+</body>
+</html>

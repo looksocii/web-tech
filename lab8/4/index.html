@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lab8-4</title>
+    <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        #box{
+            font-size: 20px;
+            width: 375px;
+            border: 1px solid black;
+            padding: 30px;
+            margin: 0 auto;
+            font-family: 'Mitr', sans-serif;
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        button{
+            margin-top: 5px;
+            margin-left: 110px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <form id="showmsg" action="show.php" method="post">
+            <div class="form-group">
+                <label for="id">หมายเลขบัตรประชาชน : </label>
+                <input type="text" id="id" name="id" class="form-control" value="1234"/>
+            </div>
+            <div class="form-group">
+                <label for="fnmae">ชื่อ : </label>
+                <input type="text" id="fname" name="fname" class="form-control" value="พันธกานต์"/>
+            </div>
+            <div class="form-group">
+                <label for="lnmae">นามสกุล : </label>
+                <input type="text" id="lname" name="lname" class="form-control" value="แก้วสังหาร"/>
+            </div>
+            <div class="form-group">
+                <label for="add">ที่อยู่ : </label>
+                <input type="text" id="add" name="add" class="form-control" value="12/1"/>
+            </div>
+            <div class="form-group">
+                <label for="area">อำเภอ/เขต : </label>
+                <input type="text" id="area" name="area" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label for="cou">จังหวัด : </label>
+                <input type="text" id="cou" name="cou" class="form-control" value="อุดรธานี"/>
+            </div>
+            <div class="form-group">
+                <label for="post">รหัสไปรษณีย์ : </label>
+                <input type="text" id="post" name="post" class="form-control" value="4100"/>
+            </div>
+            <div class="form-group">
+                <label for="tel">เบอร์โทรศัพท์ : </label>
+                <input type="text" id="tel" name="tel" class="form-control"/>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

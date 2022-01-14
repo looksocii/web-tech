@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06</title>
+</head>
+<style>
+    img {
+        width: 130px;
+        height: 130px;
+    }
+    #box {
+        width: 670px;
+        margin-left: 10px;
+    }
+    button {
+        width: 132px;
+        height: 30px;
+        background-color: burlywood;
+    }
+</style>
+<body>
+    <h1>เพิ่มผลไม้</h1>
+    <button onclick="fun1()">แอปเปิ้ล</button>
+    <button onclick="fun2()">องุ่น</button>
+    <button onclick="fun3()">กล้วย</button>
+    <button onclick="fun4()">เชอร์รี่</button>
+    <button onclick="fun5()">ชมพู่</button>
+    <div id="box">
+        <p>__________________________________________________________________________________</p>
+    </div>
+    <script>
+        function fun1(){
+            let a = document.createElement("img");
+            a.src = "photo/01.png";
+            document.getElementById("box").appendChild(a);
+        }
+        function fun2(){
+            let b = document.createElement("img");
+            b.src = "photo/02.png";
+            document.getElementById("box").appendChild(b);
+        }
+        function fun3(){
+            let c = document.createElement("img");
+            c.src = "photo/03.png";
+            document.getElementById("box").appendChild(c);
+        }
+        function fun4(){
+            let d = document.createElement("img");
+            d.src = "photo/04.png";
+            document.getElementById("box").appendChild(d);
+        }
+        function fun5(){
+            let e = document.createElement("img");
+            e.src = "photo/05.png";
+            document.getElementById("box").appendChild(e);
+        }
+    </script>
+</body>
+</html>

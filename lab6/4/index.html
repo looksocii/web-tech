@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document4</title>
+</head>
+<body>
+    <script>
+        let requestURL = 'superheroes.json';
+        let request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                var myJSON = JSON.parse(request.responseText);
+                myFunction(myJSON);
+            }
+        };
+        request.open("GET", requestURL, true);
+        request.send();
+        function myFunction(myObj) {
+            document.write("<b>Squad Name : </b>"+myObj.squadName+"<br>"+
+            "<b>Home Town : </b>"+myObj.homeTown+"<br>"+
+            "<b>Formed : </b>"+myObj.formed+"<br>"+
+            "<b>Secret Base : </b>"+myObj.secretBase+"<br>"+
+            "<b>Active : </b>"+myObj.active+"<h2>Members</h2>"+
+            "<table border='1' width='550px'><tr><th>No.</th><th>Name</th><th>Age</th><th>Secret Identity</th><th>Powers</th></tr>");
+            for (var i=0; i<myObj.members.length; i++){
+                document.write("<tr><td>"+(i+1)+"</td><td>"+myObj.members[i].name+"</td><td>"+myObj.members[i].age+"</td><td>"+myObj.members[i].secretIdentity+"</td><td>");
+                for (var j=0; j<myObj.members[i].powers.length; j++){
+                    document.write(myObj.members[i].powers[j]+"<br>");
+                }
+                document.write("</td></tr>");
+            }
+            document.write("</table>");
+        }
+    </script>
+</body>
+</html>

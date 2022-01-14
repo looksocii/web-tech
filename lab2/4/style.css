@@ -1,0 +1,40 @@
+.bargraph {
+    list-style: none;
+    padding-top: 20px;
+    width:100%;
+}
+
+ul.bargraph li {
+    font-family: 'Courier New', Courier, monospace;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    line-height: 50px;
+    padding: 0px 20px;
+    margin-bottom: 3px;
+}
+
+ul.bargraph li.one {
+    background: #ff0000;
+    width:60%;
+}
+
+ul.bargraph li.two {
+    background: #0000ff;
+    width:90%;
+}
+
+ul.bargraph li.three {
+    background: #008000;
+    width:50%;
+}
+
+ul.bargraph li.four {
+    background: #808080;
+    width:80%;
+}
+
+ul.bargraph li.five {
+    background: #808000;
+    width:75%;
+}

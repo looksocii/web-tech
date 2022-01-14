@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                xmlShow(this);
+            }
+        };
+        xhttp.open("GET", "../1/employee.xml", true);
+        xhttp.send();
+
+        function xmlShow(xml) {
+            let xmlDoc = xml.responseXML;
+            let txt = "";
+            let x = xmlDoc.getElementsByTagName("title");
+            let y = xmlDoc.getElementsByTagName("Lastname");
+            let z = xmlDoc.getElementsByTagName("Firstname");
+            let a = xmlDoc.getElementsByTagName("JobTitle");
+            let b = xmlDoc.getElementsByTagName("Address");
+            for (let i = 0; i < x.length; i++) {
+                txt += i + 1 + " " + x[i].childNodes[0].nodeValue + " " + z[i].childNodes[0].nodeValue + " " + y[i].childNodes[0].nodeValue + " ( ";
+                txt += a[i].childNodes[0].nodeValue + " )" + ", " + "<I>" + b[i].childNodes[0].nodeValue + "</I>" + "<br>";
+            }
+            document.write(txt);
+        }
+    </script>
+</body>
+
+</html>

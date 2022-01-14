@@ -1,0 +1,112 @@
+.box {
+    margin: auto;
+    padding: 10px;
+    width: 600px;
+    height: 550px;
+    background-image: url("photo/paper.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 900px;
+}
+
+.one {
+    margin: auto;
+    margin-top: 25px;
+    width: 200px;
+    height: 50px;
+    font-size: 38px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.two {
+    margin: auto;
+    margin-top: 12px;
+    width: 550px;
+    height: 50px;
+    font-size: 22px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.two input{
+    width: 130px;
+    height: 28px;
+    font-size: 17px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.two #IDStudent {
+    width: 82px;
+}
+
+.three, .four, .five, .six, .seven, .egh, .nine, .ten{
+    margin: auto;
+    width: 550px;
+    height: 50px;
+    font-size: 22px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.three select{
+    width: 78px;
+    height: 28px;
+    font-size: 17px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.three input{
+    width: 128px;
+    height: 28px;
+    font-size: 17px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.four input{
+    width: 500px;
+    font-size: 17px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.five input{
+    width: 550px;
+    font-size: 17px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.six input{
+    width: 169px;
+    font-size: 17px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.seven select{
+    width: 163px;
+    height: 28px;
+    font-size: 17px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.seven input{
+    width: 200px;
+    font-size: 17px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.egh input{
+    width: 150px;
+    font-size: 17px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.nine {
+    margin-top: 65px;
+    font-size: 12px;
+}
+
+.ten input{
+    height: 40px;
+    width: 50px;
+    margin-top: -75px;
+    margin-left: 498px;
+    font-size: 17px;
+    font-family: 'Thasadith', sans-serif;
+}

@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>/lab3/5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=KoHo&display=swap" rel="stylesheet">
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="box">
+        <form  action="" id="myForm" onsubmit="return validateForm()" method="post" >
+            <div class="are">
+                <label for='IDNumber'>หมายเลขบัตรประชาชน : </label>
+                <input type="txt" id="IDNumber" name="IDNumber" class="form-control"/>
+                <label for='First'>คำนำหน้า : </label><select id="First" name="First" class="form-control">
+                        <option value="xxx" selected>เลือก</option>
+                        <option value="000">นาย</option>
+                        <option value="001">นาง</option>
+                        <option value="002">นางสาว</option>
+                        <option value="003">เด็กชาย</option>
+                        <option value="004">เด็กหญิง</option>
+                </select>
+                <label for='FirstName'>ชื่อ : </label><input type="text" id="FirstName" name="FirstName" class="form-control" />
+                <label for='LastName'>นามสกุล : </label><input type="text" id="LastName" name="LastName" class="form-control" />
+                <label for='Address'>ที่อยู่ : </label><input type="text" id="Address" name="Address" class="form-control" />
+                <input type="text" id="Addre" name="Addre" class="form-control" />
+                <label for='Add'>ตำบล/แขวง : </label><input type="text" id="Add" name="Add" class="form-control" />
+                <label for='Ad'>อำเภอ เขต : </label><input type="text" id="Ad" name="Ad" class="form-control" />
+                <label for='province'>จังหวัด : </label><select id="province" name="province" class="form-control">
+                    <option value="fff" selected>เลือกจังหวัด</option>
+                    <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                    <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+                    <option value="กำแพงเพชร">กำแพงเพชร </option>
+                    <option value="พะเยา">พะเยา </option>
+                    <option value="พังงา">พังงา </option>
+                    <option value="หนองคาย">หนองคาย </option>
+                    <option value="อุดรธานี">อุดรธานี</option>
+                </select>
+                <label for='post'>รหัสไปรษณีย์ : </label><input type="text" id="post" name="post" class="form-control" />
+                <label for='tol'>เบอร์โทรศัพท์ : </label><input type="text" id="tol" name="tol" class="form-control" /><br>
+                <input type="submit" name="submit" value="SUBMIT" class="form-control" id="sub">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

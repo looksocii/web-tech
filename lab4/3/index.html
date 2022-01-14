@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>03</title>
+</head>
+<style>
+    th {
+        height: 30px;
+        width: 100px;
+        background-color: #eeeeee;
+        border-collapse: collapse;
+    }
+</style>
+<body>
+    <h2>ลงทะเบียนร่วมงาน</h2>
+    <input type="text" id="txt1" placeholder="รหัสนักศึกษา">
+    <input type="text" id="txt2" placeholder="ชื่อ">
+    <input type="text" id="txt3" placeholder="นามสกุล">
+    <button type="submit"  onclick="fun()">ลงทะเบียน</button>
+    <h6>_________________________________________________________________________________________________________________</h6>
+    <table id="table0">
+        <tr>
+            <th>ลำดับที่</th>
+            <th>รหัสนักศึกษา</th>
+            <th>ชื่อ</th>
+            <th>นามสกุล</th>
+        </tr>
+    </table>
+    <script>
+        var num = 1;
+        function fun(){
+            var a = document.getElementById('txt1').value;
+            var b = document.getElementById('txt2').value;
+            var c = document.getElementById('txt3').value;
+
+            let tr = document.createElement("tr");
+            let td1 = document.createElement("td");
+            let td2 = document.createElement("td");
+            let td3 = document.createElement("td");
+            let td4 = document.createElement("td");
+            
+            td1.appendChild(document.createTextNode(num));
+            num += 1;
+            td2.appendChild(document.createTextNode(a));
+            td3.appendChild(document.createTextNode(b));
+            td4.appendChild(document.createTextNode(c));
+
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            tr.appendChild(td3);
+            tr.appendChild(td4);
+
+            document.getElementById('table0').appendChild(tr);
+        }
+    </script>
+</body>
+</html>

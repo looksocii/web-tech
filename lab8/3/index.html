@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lab8-3</title>
+    <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
+    <style>
+        #box{
+            text-align: center;
+            font-family: 'Mitr', sans-serif;
+            font-size: 20px;
+            width: 400px;
+            border: 1px solid black;
+            margin: auto;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        #submit{
+            font-family: 'Mitr', sans-serif;
+            margin-top: 10px;
+            margin-left: 280px;
+            width: 90px;
+            height: 40px;
+        }
+        input{
+            width: 175px;
+            height: 25px;
+            font-family: 'Mitr', sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <form id="showmsg" action="show.php" method="post">
+            <p><label>หมายเลขบัตรประชาชน : </label>
+            <input type="text" id="id" name="id" value="1234"/></p>
+            <p><label>ชื่อ : </label>
+            <input type="text" id="fname" name="fname" value="พันธกานต์"/></p>
+            <p><label>นามสกุล : </label>
+            <input type="text" id="lname" name="lname" value="แก้วสังหาร"/></p>
+            <p><label>ที่อยู่ : </label>
+            <input type="text" id="add" name="add" value="12/1"/></p>
+            <p><label>อำเภอ/เขต : </label>
+            <input type="text" id="area" name="area"/></p>
+            <p><label>จังหวัด : </label>
+            <input type="text" id="cou" name="cou" value="อุดรธานี"/></p>
+            <p><label>รหัสไปรษณีย์ : </label>
+            <input type="text" id="post" name="post" value="41000"/></p>
+            <p><label>เบอร์โทรศัพท์ : </label>
+            <input type="text" id="tel" name="tel"/></p>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

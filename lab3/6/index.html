@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>/lab3/6</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div style="width: 300px; padding: 10px">
+        <div id="box1">Math</div>
+        <div id="box2">Thai</div>
+        <div id="box3">English</div>
+        <div id="box4">Science</div>
+        <div id="box5">Social</div><br>
+        <button onclick="myfunction()" class="form-control">view chart</button>
+    </div>
+</body>
+<script>
+    function myfunction() {
+        document.getElementById('box1').style.width = "65%";
+        document.getElementById('box2').style.width = "75%";
+        document.getElementById('box3').style.width = "40%";
+        document.getElementById('box4').style.width = "100%";
+        document.getElementById('box5').style.width = "85%";
+    }
+</script>
+<style>
+    #box1, #box2, #box3, #box4, #box5 {
+        width: 70px;
+        background-color: blue;
+        transition: 1s;
+        color: #FFF;
+        margin: 3px 0px 0px 0px;
+        padding: 8px;
+    }
+    button {
+        height: 35px;
+    }
+</style>
+
+</html>

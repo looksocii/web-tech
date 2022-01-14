@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ลงทะเบียน</title>
+    <link rel="shortcut icon" href="photo/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith&display=swap" rel="stylesheet">
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="box"><form action="" id="myForm" onsubmit="return validateForm()" method="post" >
+        <div class="one">ลงทะเบียน</div>
+        <div class="two">
+            <label for='IDNumber'>หมายเลขบัตรประชาชน : </label>
+            <input type="txt" id="IDNumber" name="IDNumber" />
+            <label for='IDStudent'>เลขรหัสนักศึกษา : </label>
+            <input type="txt" id="IDStudent" name="IDStudent" />
+        </div>
+
+        <div class="three">
+            <label for='First'>คำนำหน้า : </label><select id="First" name="First">
+                    <option value="xxx" selected>เลือก</option>
+                    <option value="000">นาย</option>
+                    <option value="001">นาง</option>
+                    <option value="002">นางสาว</option>
+                    <option value="003">เด็กชาย</option>
+                    <option value="004">เด็กหญิง</option>
+            </select>
+            <label for='FirstName'>ชื่อ : </label><input type="text" id="FirstName" name="FirstName" />
+            <label for='LastName'>นามสกุล : </label><input type="text" id="LastName" name="LastName" />
+        </div>
+
+        <div class="four">
+            <label for='Address'>ที่อยู่ : </label><input type="text" id="Address" name="Address" />
+        </div>
+
+        <div class="five">
+            <input type="text" id="Addre" name="Addre" />
+        </div>
+
+        <div class="six">
+            <label for='Add'>ตำบล/แขวง : </label><input type="text" id="Add" name="Add" />
+            <label for='Ad'>อำเภอ เขต : </label><input type="text" id="Ad" name="Ad" />
+        </div>
+
+        <div class="seven">
+            <label for='province'>จังหวัด : </label><select id="province" name="province">
+                    <option value="fff" selected>เลือกจังหวัด</option>
+                    <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                    <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+                    <option value="กำแพงเพชร">กำแพงเพชร </option>
+                    <option value="พะเยา">พะเยา </option>
+                    <option value="พังงา">พังงา </option>
+                    <option value="หนองคาย">หนองคาย </option>
+                    <option value="อุดรธานี">อุดรธานี</option>
+            </select>
+            <label for='post'>รหัสไปรษณีย์ : </label><input type="text" id="post" name="post" />
+        </div>
+
+        <div class="egh">
+            <label for='tol'>เบอร์โทรศัพท์ : </label><input type="text" id="tol" name="tol" />
+        </div>
+
+        <div class="nine">Copyright © By Puntakarn Kaewsanghan 61070139</div>
+        <div class="ten">
+            <input type="submit" name="submit" value="ส่ง">
+        </div>
+    </div></form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<!DOCTYPE people [
+    <!ELEMENT people (ID,Title,Lastname,Firstname,JobTitle,Address)>
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT Title (#PCDATA)>
+    <!ELEMENT Lastname (#PCDATA)>
+    <!ELEMENT Firstname (#PCDATA)>
+    <!ELEMENT JobTitle (#PCDATA)>
+    <!ELEMENT Address (#PCDATA)>
+]>
